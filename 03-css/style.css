@@ -1,15 +1,20 @@
+/* body {
+  color: #444;
+  font-family: sans-serif;
+} */
+
 /* All of these tags (selectors) are groups so that we can
    edit their font in one go instead of in each ones style section */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 p,
 li {
-  font-family: sans-serif;
+  
   color: #444;
-}
+} */
 
 h1,
 h2,
@@ -110,34 +115,33 @@ li:last-child {
 /* Misconception: this won't work! 
    What really happens is it looks, in article, for any instance where <p> is the
    first child, which actually happens in the <div> container.*/
-article p:first-child {
-  color: red;
-}
+/* article p:first-child {
+  color: red; 
+}*/
 
 /* Styling links: use "link" to target anchor element with links
    since anchor tag doesn't always have href attribute */
 a:link {
-  color: #1098ad;
+  color: red;
   text-decoration: none; /* removes underline */
 }
 
 /* for after link has been used */
-a:visited {
-  /* color: #777; */
+/* a:visited {
   color: #1098ad;
-}
+} */
 
 /* for when link is hovered over */
-a:hover {
+/* a:hover {
   color: orangered;
   font-weight: bold;
   text-decoration: underline orangered;
-}
+} */
 
 /* for when link is clicked */
-a:active {
+/* a:active {
   background-color: black;
   font-style: italic;
-}
+} */
 
 /* Always style links in this order ^ (LVHA) */
