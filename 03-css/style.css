@@ -1,7 +1,7 @@
-/* body {
+body {
   color: #444;
   font-family: sans-serif;
-} */
+}
 
 /* All of these tags (selectors) are groups so that we can
    edit their font in one go instead of in each ones style section */
@@ -127,21 +127,21 @@ a:link {
 }
 
 /* for after link has been used */
-/* a:visited {
+a:visited {
   color: #1098ad;
-} */
+}
 
 /* for when link is hovered over */
-/* a:hover {
+a:hover {
   color: orangered;
   font-weight: bold;
   text-decoration: underline orangered;
-} */
+}
 
 /* for when link is clicked */
-/* a:active {
+a:active {
   background-color: black;
   font-style: italic;
-} */
+}
 
 /* Always style links in this order ^ (LVHA) */
