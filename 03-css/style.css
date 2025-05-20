@@ -1,20 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: #444;
   font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
 }
 
-/* All of these tags (selectors) are groups so that we can
-   edit their font in one go instead of in each ones style section */
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
 
-/* h1,
-h2,
-h3,
-h4,
-p,
-li {
-  
-  color: #444;
-} */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
 
 h1,
 h2,
@@ -30,10 +61,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -44,10 +78,22 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* We can use the # to reference id names */
@@ -79,18 +125,6 @@ li {
   font-size: 18px;
   font-weight: bold;
 }
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
-
-/*   */
 
 /* You can use something called pseudo-classes to have CSS automatically 
    determine some things on it's own, like how it found the "first-child" of the li
