@@ -211,6 +211,7 @@ button {
   right: 50px;
 }
 
+/* changes the first letter of the h1 element to style normal and adds margins to it */
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
@@ -226,6 +227,7 @@ h3 + p::first-line {
   background-color: orange;
 } */
 
+/* to make a child in CSS without adding it to HTML */
 h2::after {
   content: "TOP";
   color: #444;
