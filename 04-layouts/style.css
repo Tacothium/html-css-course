@@ -198,8 +198,6 @@ nav a:link {
 
   display: block; */
 
-  margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -269,9 +267,9 @@ nav p {
 } */
 
 /* FLOATS */
-
-/* float takes the element out of the pages flow so the rest of the elements 
-    almost act like that element isn't there */
+/*
+ float takes the element out of the pages flow so the rest of the elements 
+    almost act like that element isn't there 
 
 .author-img {
   float: left;
@@ -279,7 +277,7 @@ nav p {
 }
 
 .author {
-  /* padding-left: 80px; */
+  padding-left: 80px; 
   float: left;
   padding-top: 10px;
   margin-left: 20px;
@@ -293,13 +291,13 @@ nav {
   float: right;
 }
 
-/* not best practice for clearing floats 
+ not best practice for clearing floats 
 .clear {
 clear: both;
 } 
-*/
 
-/* Rememeber: for pseudo-elements you needto define content and their default display is inline*/
+
+ Rememeber: for pseudo-elements you needto define content and their default display is inline
 .clearfix::after {
   clear: both;
   content: "";
@@ -315,10 +313,73 @@ aside {
   width: 300px;
 }
 
-/* Put clear in the footer. It gets affected when giving
+ Put clear in the footer. It gets affected when giving
    the float property to the aside element since floats affect
-   the elements that follow the floated element */
+   the elements that follow the floated element 
 
 footer {
   clear: both;
+} */
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+aside {
+  /*
+  DEFAULTS:
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  */
+
+  flex: 0 0 300px;
 }
